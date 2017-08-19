@@ -1,0 +1,43 @@
+ 11           0 LOAD_CONST               1 (112)
+              3 LOAD_CONST               2 (121)
+              6 LOAD_CONST               3 (116)
+              9 LOAD_CONST               4 (104)
+             12 LOAD_CONST               5 (111)
+             15 LOAD_CONST               6 (110)
+             18 LOAD_CONST               7 (95)
+             21 LOAD_CONST               8 (97)
+             24 LOAD_CONST               9 (115)
+             27 LOAD_CONST              10 (109)
+             30 LOAD_CONST               7 (95)
+             33 LOAD_CONST              11 (105)
+             36 LOAD_CONST               9 (115)
+             39 LOAD_CONST               7 (95)
+             42 LOAD_CONST              12 (101)
+             45 LOAD_CONST               8 (97)
+             48 LOAD_CONST               9 (115)
+             51 LOAD_CONST               2 (121)
+             54 BUILD_LIST              18
+             57 STORE_FAST               0 (z)
+
+ 12          60 LOAD_CONST              13 ('Flag is: ')
+             63 STORE_FAST               1 (s)
+
+ 13          66 SETUP_LOOP              30 (to 99)
+             69 LOAD_FAST                0 (z)
+             72 GET_ITER            
+        >>   73 FOR_ITER                22 (to 98)
+             76 STORE_FAST               2 (i)
+
+ 14          79 LOAD_FAST                1 (s)
+             82 LOAD_GLOBAL              0 (chr)
+             85 LOAD_FAST                2 (i)
+             88 CALL_FUNCTION            1
+             91 BINARY_ADD          
+             92 STORE_FAST               1 (s)
+             95 JUMP_ABSOLUTE           73
+        >>   98 POP_BLOCK           
+
+ 15     >>   99 LOAD_FAST                1 (s)
+            102 PRINT_ITEM          
+            103 PRINT_NEWLINE       
+            104 LOAD_CONST               0 (None)
